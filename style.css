@@ -1,0 +1,143 @@
+:root {
+    --blue-200: #bfdbfe;
+    --blue-600: #2563eb;
+    --gray-50: #f9fafb;
+    --green-500: #10b981;
+    --green-600: #059669;
+    --purple-600: #9333ea;
+    --red-600: #dc2626;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-50);
+}
+
+.sectionOne .githubContainer{
+    border-bottom: 2px solid var(--green-600);
+    box-shadow: 0 1px 5px var(--green-500);
+}
+
+.githubContainer .githubIcon{
+    padding: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  border-left: 2px solid var(--green-600);
+}
+
+.sectionOne .githubContainer .githubIcon{
+    font-size: 2rem;
+    color: var(--blue-600);
+}
+
+.sectionOne .imageTextContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.sectionOne .imageTextContainer{
+    flex-wrap: wrap;
+}
+
+.sectionOne .imageTextContainer :is(.imageContainer, .textContainer){
+    max-width: 35rem;
+}
+
+.sectionOne img{
+    max-width: 370px;
+    height: auto;
+}
+
+.sectionOne .imageTextContainer .textContainer{
+    padding: 0.3rem 1rem;
+}
+
+.sectionOne .imageTextContainer .textContainer h3{
+    font-size: 2.3rem;
+    color: var(--blue-600);
+}
+
+.sectionOne .imageTextContainer .textContainer h3 span{
+    color: var(--green-600);
+}
+
+.sectionOne .imageTextContainer .textContainer p{
+    font-size: 1.1rem;
+    color: var(--green-500);
+    margin: 1.4rem 0rem;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.purchasePrice, .stockQuantity, .currentPrice{
+    display: flex;
+    font-size: 1.2rem;
+    font-family: monospace;
+    align-items: center;
+    justify-content: flex-start;
+    margin:  0.5rem 0;
+    border-radius: 10px;
+    border: 2px solid var(--green-600);
+    padding: 0.2rem 0.5rem;
+}
+
+.sectionOne .imageTextContainer .textContainer .checkPL{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--gray-50);
+    background-color: var(--green-500);
+    color: white;
+    padding:  0.3rem 0.5rem;
+    cursor: pointer;
+    margin: 1rem 0px;
+    text-decoration: none;
+}
+
+
+#sectionTwo .textContainer .output{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#footer{
+    width: 100%;
+    min-height: 6vh;
+    background-color: rgba(219, 247, 213, 0.835);
+}
+.footer-list{
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.list-item{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
