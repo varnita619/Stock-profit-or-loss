@@ -112,15 +112,18 @@ body{
 }
 
 
-#sectionTwo .textContainer .output{
+.output{
     width: fit-content;
     margin: 0 auto;
     padding: 0.5rem;
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
+    display: none;
+    border: 2px solid red;
+    background-color: var(--gray-50);
 }
 
 #footer{
+    margin-top: 98px;
     width: 100%;
     min-height: 6vh;
     background-color: rgba(219, 247, 213, 0.835);

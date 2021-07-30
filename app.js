@@ -12,20 +12,25 @@ checkPL.addEventListener('click', ()=>{
 
     console.log(purchaseAmt,sQty,currentAmt)
 
-    if(purchaseAmt>0 && sQty>0 && currentAmt>0){
-    if(currentAmt>=purchaseAmt){
+    if(purchaseAmt>0 && sQty>0 && currentAmt>0)
+    {
+    if(currentAmt>=purchaseAmt)
+    {
         img.src = "profit.jpg"
         const profit = ((currentAmt-purchaseAmt)*sQty).toFixed(2) 
         const profitPer = (((currentAmt-purchaseAmt)*100)/purchaseAmt).toFixed(2);
+        output.style.display = "block"
         output.style.color = "blue"
         output.innerText = `Whoo! You gained ${profitPer}%. Your total profit is ₹${profit}`
     }
-}
+
     else{
         img.src = "loss.jpg"
         const loss = ((purchaseAmt-currentAmt)*sQty).toFixed(2) 
         const lossPer = (((purchaseAmt-currentAmt)*100)/purchaseAmt).toFixed(2);
+        output.style.display = "block"
         output.style.color = "red"
         output.innerText = `Oops! You lost ${lossPer}%. Your total loss is ₹${loss}`
     }
+}
 })
